@@ -6,19 +6,20 @@ module.exports = {
       // Web
       H1: "5rem",
       H2: "4rem",
+      BTN: "3.5rem",
       H3: "3rem",
       H5: "0.8rem",
       H6: "0.6rem",
       P: "1rem",
 
       // Mobil
-      mH1: "3rem",
-      mH2: "2.5rem",
+      mH1: "1.6rem",
+      mH2: "1.4rem",
+      mBTN: "1.3",
       mH3: "2rem",
-      mH4: "1rem",
-      mH5: "0.4rem",
-      mH6: "0.3rem",
-      mP: "0.5rem",
+      mH4: "0.8rem",
+      mH5: "0.7rem", //unødvendig?
+      mP: "0.9rem",
     },
     // Font Family
     fontFamily: {
@@ -28,11 +29,11 @@ module.exports = {
 
     // Font Weight
     fontWeight: {
-      thin: 200,
-      medium: 500,
-      bold: 700,
+      thin: 300,
+      medium: 400,
+      bold: 500,
+      bolder: 600,
     },
-
     // Colors
     colors: {
       black: "#202020",
@@ -41,7 +42,17 @@ module.exports = {
       lightgreen: "#E8EDDF",
       darkgreen: "#304B42",
     },
-    extend: {},
+
+    extend: {
+      brightness: {
+        1: ".35",
+        2: ".45",
+        3: ".55",
+        4: ".58",
+        5: ".85",
+        6: ".95",
+      },
+    },
   },
   plugins: [require("@tailwindcss/typography"), require("@tailwindcss/forms")],
 };

@@ -1,18 +1,342 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="da">
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Byvandringer</title>
+    <title>Booking</title>
     <link rel="stylesheet" href="https://use.typekit.net/bmx1dhy.css" />
   </head>
-  <body class="grid place-items-center p-8">
-    <h1 class="text-xl font-bold text-emerald-700">Tailwind Template E2022</h1>
-    <p class="text-emerald-500">
-      Powered by <a href="https://vitejs.dev/guide">Vite</a>
-    </p>
-    <img src="img/vite.svg" alt="Vite Logo" />
+  <body class="text-black">
+    <!-- Header -->
+    <header>
+      <nav class="bg-transparent absolute right-0 z-10 w-screen font-Roboto">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="index.html" class="flex items-center py-4">
+                  <img src="logo.svg" alt="Logo" class="mr-2 h-20 w-20" />
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden items-center space-x-1 md:flex">
+                <a
+                  href="index.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Hjem</a
+                >
+                <a
+                  href="byvandringer.html"
+                  class="font-semibold border-b-4 border-pink py-4 px-2 text-white"
+                  >Byvandringer</a
+                >
+                <a
+                  href="booking.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Booking</a
+                >
+                <a
+                  href="om.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Om</a
+                >
+                <a
+                  href="kontakt.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Kontakt</a
+                >
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex items-center md:hidden">
+              <button class="mobile-menu-button outline-none">
+                <svg
+                  class="-mr-3 h-8 w-12 text-white hover:text-pink"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden bg-white">
+          <ul class="">
+            <li class="active">
+              <a
+                href="index.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Hjem</a
+              >
+            </li>
+            <li>
+              <a
+                href="byvandringer.html"
+                class="text-sm block bg-pink px-2 py-4 text-white transition duration-300 hover:bg-pink"
+                >Byvandringer</a
+              >
+            </li>
+            <li>
+              <a
+                href="booking.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a
+                href="om.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Om</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontakt.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+
+      <section>
+        <div class="relative">
+          <img
+            class="h-screen object-cover brightness-6"
+            src="copenhagen-g2cfd988b7.jpg"
+            alt="baggrundsbillede"
+          />
+          <div class="m-4 flex place-content-center">
+            <h1
+              class="whitespace absolute top-1/4 font-Korolev text-mH1 font-bold text-white"
+            >
+              Byvandringer i København
+            </h1>
+
+            <h2
+              class="absolute top-1/4 m-6 pt-6 text-center font-Korolev text-mH2 font-thin leading-7 text-white"
+            >
+              Bliv introduceret til det eventylige København
+            </h2>
+
+            <img
+              class="absolute bottom-10 animate-bounce"
+              src="chevron-down.svg"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="m-4">
+        <h2 class="pb-3 font-Korolev text-mH2">
+          Oplev en spændende byvandring i København
+        </h2>
+        <p class="pb-4 font-Roboto text-mP">
+          Vores autoriserede danske guides introducerer jer til det eventyrlige
+          København. Turene fokuserer på det kulturelle og udviklingen af
+          København, samt historiske seværdigheder.
+        </p>
+        <p class="pb-8 font-Roboto text-mP font-bold">
+          Læs mere herunder og book én af vores fem vandreture i København.
+        </p>
+      </section>
+      <section class="m-4">
+        <!-- Card 1 -->
+        <div class="mb-14 max-w-sm overflow-hidden rounded shadow-xl">
+          <img
+            class="max-h-52 w-full object-cover"
+            src="castle-g50423f281_1920.jpg"
+            alt="læs mere om byvandring 1"
+          />
+          <div class="h-44 px-4 py-4">
+            <h5 class="pb-1 text-mH5 font-bold">Byvandring 1</h5>
+            <h2 class="text-xl pb-2 font-Korolev text-mH2 font-bold">
+              På vandretur i indre by
+            </h2>
+            <p class="font-Roboto text-mH4">
+              Hvorfor har gaden sådan et mærkeligt navn? Hvornår var det nu, det
+              var? Hvor skete det? Hvad hed de? <br />
+              Få svar på alt det, du ikke ved om din by, og mere til.
+            </p>
+          </div>
+          <div class="px-4 pt-2 pb-8">
+            <a
+              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+              href="byvandring1.html"
+              >Læs Mere</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="mb-14 max-w-sm overflow-hidden rounded shadow-xl">
+          <img
+            class="max-h-52 w-full object-cover"
+            src="canal-g3406788ae_1920.jpg"
+            alt="læs mere om byvandring 2"
+          />
+          <div class="h-44 px-4 py-4">
+            <h5 class="pb-1 text-mH5 font-bold">Byvandring 2</h5>
+            <h2 class="text-xl pb-2 font-Korolev text-mH2 font-bold">
+              Byvandring på Christianshavn
+            </h2>
+            <p class="font-Roboto text-mH4">
+              Vi fortæller bydelens brogede historie, både som selvstændig
+              købstad i 1600-tallet og som en særlig del af København med egne
+              traditioner og en særlig selvforståelse.
+            </p>
+          </div>
+          <div class="px-4 pt-2 pb-8">
+            <a
+              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+              href="byvandring2.html"
+              >Læs Mere</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="mb-14 max-w-sm overflow-hidden rounded shadow-xl">
+          <img
+            class="max-h-52 w-full object-cover"
+            src="hc_cph.jpg"
+            alt="læs mere om byvandring 3"
+          />
+          <div class="h-44 px-4 py-4">
+            <h5 class="pb-1 text-mH5 font-bold">Byvandring 3</h5>
+            <h2 class="text-xl pb-2 font-Korolev text-mH2 font-bold">
+              Gå i H.C. Andersens fodspor
+            </h2>
+            <p class="font-Roboto text-mH4">
+              Tag på vandretur med Copenhagen Walking Tours autoriserede guider
+              på en tidsrejse i den gamle del af København og “I H. C. Andersens
+              fodspor”
+            </p>
+          </div>
+          <div class="px-4 pt-2 pb-8">
+            <a
+              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+              href="byvandring3.html"
+              >Læs Mere</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="mb-14 max-w-sm overflow-hidden rounded shadow-xl">
+          <img
+            class="max-h-52 w-full object-cover"
+            src="cph_hus.jpg"
+            alt="læs mere om byvandring 4"
+          />
+          <div class="h-44 px-4 py-4">
+            <h5 class="pb-1 text-mH5 font-bold">Byvandring 4</h5>
+            <h2 class="text-xl pb-2 font-Korolev text-mH2 font-bold">
+              Fra sildemarked til hovedstad
+            </h2>
+            <p class="font-Roboto text-mH4">
+              København hviler solidt på sit århundrede gamle fundament, og den
+              historiske købstad er der endnu, hvis bare vi holder øjne og ører
+              åbne.
+            </p>
+          </div>
+          <div class="px-4 pt-2 pb-8">
+            <a
+              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+              href="byvandring4.html"
+              >Læs Mere</a
+            >
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="mb-14 max-w-sm overflow-hidden rounded shadow-xl">
+          <img
+            class="max-h-52 w-full object-cover"
+            src="rosenborg-castle-g78457ce31_1920.jpg"
+            alt="læs mere om byvandring 5"
+          />
+          <div class="h-44 px-4 py-4">
+            <h5 class="pb-1 text-mH5 font-bold">Byvandring 5</h5>
+            <h2 class="text-xl pb-2 font-Korolev text-mH2 font-bold">
+              Rosenborg slot og kronjuvelerne
+            </h2>
+            <p class="font-Roboto text-mH4">
+              Renæssanceromantik i storbyen. Oplev det ægte historiske vingesus
+              i Danmarks dejligste lystslot – lige midt i hovedstaden. Rosenborg
+              Slot er et kulturhistorisk museum.
+            </p>
+          </div>
+          <div class="px-4 pt-2 pb-8">
+            <a
+              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+              href="byvandring5.html"
+              >Læs Mere</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkgreen">
+      <div class="m-4 mb-0 flex">
+        <div>
+          <a href="index.html" class="flex items-center py-4">
+            <img src="logo.svg" alt="Logo" class="h-20 w-20" />
+          </a>
+        </div>
+        <div>
+          <p class="pl-6 pt-3 text-mP font-bold text-white">kontakt</p>
+          <p class="pl-6 text-mP font-thin text-white">
+            info@copenhagen-walkingtours.dk
+          </p>
+          <p class="pl-6 text-mP font-thin text-white">+45 22568898</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <h5 class="text-mH5 font-bold text-white">Bestilling</h5>
+        <h5 class="pb-4 text-mH5 font-thin text-white">
+          Udfyld bookingformular for bestilling. I vil herefter modtage en
+          bekræftelse på booking med en formular som skal udfyldes for endelig
+          bekræftelse.
+        </h5>
+        <h5 class="text-mH5 font-bold text-white">Afbestilling</h5>
+        <h5 class="text-mH5 font-thin text-white">
+          Ved afbestilling senere end 72 timer før turens planlagte start
+          betales turens fulde beløb.
+        </h5>
+      </div>
+      <div class="p-4">
+        <h5 class="font-b text-end text-mH5 text-white">
+          ©Copenhagen Walking Tours
+        </h5>
+      </div>
+    </footer>
 
     <script type="module" src="./main.js"></script>
   </body>
