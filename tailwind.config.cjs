@@ -15,7 +15,7 @@ module.exports = {
       // Mobil
       mH1: "1.6rem",
       mH2: "1.4rem",
-      mBTN: "1.3",
+      mBTN: "1.3rem",
       mH3: "2rem",
       mH4: "0.8rem",
       mH5: "0.7rem", //unødvendig?
@@ -41,6 +41,7 @@ module.exports = {
       white: "#FFFFFF",
       lightgreen: "#E8EDDF",
       darkgreen: "#304B42",
+      gray: "#6C727F",
     },
 
     extend: {
@@ -48,7 +49,7 @@ module.exports = {
         1: ".35",
         2: ".45",
         3: ".55",
-        4: ".58",
+        4: ".65",
         5: ".85",
         6: ".95",
       },
