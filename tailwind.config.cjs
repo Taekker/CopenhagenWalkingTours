@@ -13,10 +13,11 @@ module.exports = {
       P: "1rem",
 
       // Mobil
-      mH1: "1.6rem",
+      mH1forside: "1.6rem",
+      mH1: "1.93rem",
       mH2: "1.4rem",
       mBTN: "1.3rem",
-      mH3: "2rem",
+      mH3: "1.1rem",
       mH4: "0.8rem",
       mH5: "0.7rem", //unødvendig?
       mP: "0.9rem",
