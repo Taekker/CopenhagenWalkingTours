@@ -167,7 +167,7 @@
                 Fulde navn*
               </label>
               <input
-                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:bg-white"
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:ring-0"
                 id="grid-first-name"
                 type="text"
                 placeholder="Jens Jensen"
@@ -181,7 +181,7 @@
                 Tlf. Nr.*
               </label>
               <input
-                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:bg-white focus:outline-none"
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
                 id="grid-first-name"
                 type="text"
                 placeholder="12345678"
@@ -195,7 +195,7 @@
                 E-mail*
               </label>
               <input
-                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:bg-white focus:outline-none"
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
                 id="grid-first-name"
                 type="text"
                 placeholder="jens@jensen.dk"
@@ -213,7 +213,7 @@
               </label>
               <div class="relative">
                 <select
-                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:bg-white focus:outline-none"
+                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
                   id="grid-state"
                 >
                   <option>Byvandring 1: På vandretur i indre by</option>
@@ -237,7 +237,7 @@
               </label>
               <div class="relative">
                 <select
-                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:bg-white focus:outline-none"
+                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
                   id="grid-state"
                 >
                   <option>1-5</option>
@@ -259,7 +259,7 @@
               </label>
               <div class="relative">
                 <select
-                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:bg-white focus:outline-none"
+                  class="block w-full appearance-none rounded border py-3 px-4 pr-8 leading-tight focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
                   id="grid-state"
                 >
                   <option>Dansk</option>
@@ -288,7 +288,7 @@
                     x-model="datepickerValue"
                     @click="showDatepicker = !showDatepicker"
                     @keydown.escape="showDatepicker = false"
-                    class="focus:shadow-outline cursor w-full cursor-pointer rounded py-3 pr-10 font-medium leading-none shadow-sm focus:outline-none"
+                    class="focus:shadow-outline cursor w-full cursor-pointer rounded py-3 pr-10 font-medium leading-none shadow-sm focus:border-pink focus:ring-0"
                     placeholder="vælg dato"
                   />
 
@@ -509,13 +509,14 @@
             >Vælg tid*</label
           >
           <div
-            class="mb-16 w-fit rounded border border-gray bg-white py-1 shadow-sm outline-none"
+            class="mb-16 w-fit rounded border border-gray bg-white py-1 shadow-sm"
           >
             <div class="flex">
               <select
                 name="hours"
-                class="bg-transparent cursor-pointer appearance-none border-none pr-7 text-mP text-black outline-none"
+                class="bg-transparent cursor-pointer border-none pr-7 text-mP text-black outline-none focus:ring-0"
               >
+                <option value="1">00</option>
                 <option value="1">1</option>
                 <option value="2">2</option>
                 <option value="3">3</option>
@@ -528,35 +529,39 @@
                 <option value="10">10</option>
                 <option value="11">10</option>
                 <option value="12">12</option>
+                <option value="13">13</option>
+                <option value="14">14</option>
+                <option value="15">15</option>
+                <option value="16">16</option>
+                <option value="17">17</option>
+                <option value="18">18</option>
+                <option value="19">19</option>
+                <option value="20">20</option>
+                <option value="21">21</option>
+                <option value="22">22</option>
+                <option value="23">23</option>
               </select>
               <span class="mt-2 text-mP text-black outline-none">:</span>
               <select
                 name="minutes"
-                class="bg-transparent cursor-pointer appearance-none border-none pr-7 text-mP text-black outline-none"
+                class="bg-transparent cursor-pointer appearance-none border-none pr-7 text-mP text-black outline-none focus:ring-0"
               >
                 <option value="0">00</option>
                 <option value="0">15</option>
                 <option value="30">30</option>
                 <option value="30">45</option>
               </select>
-              <select
-                name="ampm"
-                class="bg-transparent cursor-pointer appearance-none border-none pr-7 text-mP text-black outline-none"
-              >
-                <option value="am">AM</option>
-                <option value="pm">PM</option>
-              </select>
             </div>
           </div>
         </section>
         <div class="mb-16">
-          <label for="message" class="mb-2 block text-mP font-bold"
+          <label for="message" class="mb-2 block text-mP font-bold focus:ring-0"
             >Kommentar til booking?</label
           >
           <textarea
             id="message"
             rows="4"
-            class="mb-10 block w-full rounded border border-gray text-mP text-black"
+            class="mb-10 block w-full rounded border border-gray text-mP text-black focus:border-pink focus:ring-0"
             placeholder="Jeg har et spørgsmål..."
           ></textarea>
         </div>
