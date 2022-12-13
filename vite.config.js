@@ -24,6 +24,7 @@ export default defineConfig({
         bookingdone: resolve(__dirname, "src/bookingdone.html"),
         om: resolve(__dirname, "src/om.html"),
         kontakt: resolve(__dirname, "src/kontakt.html"),
+        kontaktdone: resolve(__dirname, "src/kontaktdone.html"),
       },
     },
   },
