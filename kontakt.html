@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="da">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kontakt</title>
+    <link rel="stylesheet" href="https://use.typekit.net/bmx1dhy.css" />
+    <script
+      src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.js"
+      defer
+    ></script>
+    <script type="module" crossorigin src="./assets/style.a87c9e06.js"></script>
+    <link rel="stylesheet" href="./assets/style.690e3b2c.css">
+  </head>
+
+  <body class="text-black">
+    <!-- Header -->
+    <header>
+      <nav class="bg-transparent absolute right-0 z-10 w-screen font-Roboto">
+        <div class="mx-auto max-w-6xl px-4">
+          <div class="flex justify-between">
+            <div class="flex space-x-7">
+              <div>
+                <!-- Website Logo -->
+                <a href="index.html" class="flex items-center py-4">
+                  <img src="./assets/logo.fc539a19.svg" alt="Logo" class="mr-2 h-20 w-20" />
+                </a>
+              </div>
+              <!-- Primary Navbar items -->
+              <div class="hidden items-center space-x-1 md:flex">
+                <a
+                  href="index.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Hjem</a
+                >
+                <a
+                  href="byvandringer.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Byvandringer</a
+                >
+                <a
+                  href="booking.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Booking</a
+                >
+                <a
+                  href="om.html"
+                  class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
+                  >Om</a
+                >
+                <a
+                  href="kontakt.html"
+                  class="font-semibold border-b-4 border-pink py-4 px-2 text-white"
+                  >Kontakt</a
+                >
+              </div>
+            </div>
+
+            <!-- Mobile menu button -->
+            <div class="flex items-center md:hidden">
+              <button class="mobile-menu-button outline-none">
+                <svg
+                  class="-mr-3 h-8 w-12 text-white hover:text-pink"
+                  x-show="!showMenu"
+                  fill="none"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="3"
+                  viewBox="0 0 24 24"
+                  stroke="currentColor"
+                >
+                  <path d="M4 6h16M4 12h16M4 18h16"></path>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- mobile menu -->
+        <div class="mobile-menu hidden bg-white">
+          <ul class="">
+            <li class="active">
+              <a
+                href="index.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Hjem</a
+              >
+            </li>
+            <li>
+              <a
+                href="byvandringer.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Byvandringer</a
+              >
+            </li>
+            <li>
+              <a
+                href="booking.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Booking</a
+              >
+            </li>
+            <li>
+              <a
+                href="om.html"
+                class="text-sm block px-2 py-4 transition duration-300 hover:bg-pink hover:text-white"
+                >Om</a
+              >
+            </li>
+            <li>
+              <a
+                href="kontakt.html"
+                class="text-sm block bg-pink px-2 py-4 text-white transition duration-300 hover:bg-pink"
+                >Kontakt</a
+              >
+            </li>
+          </ul>
+        </div>
+        <script>
+          const btn = document.querySelector("button.mobile-menu-button");
+          const menu = document.querySelector(".mobile-menu");
+
+          btn.addEventListener("click", () => {
+            menu.classList.toggle("hidden");
+          });
+        </script>
+      </nav>
+
+      <section>
+        <div class="relative">
+          <img
+            class="h-screen object-cover brightness-4"
+            src="./assets/guard.50c4db43.jpg"
+            alt="baggrundsbillede"
+          />
+          <div class="m-4 flex place-content-center">
+            <h1
+              class="whitespace absolute top-1/4 font-Korolev text-mH1 font-bold text-white"
+            >
+              Kontakt os
+            </h1>
+
+            <img
+              class="absolute bottom-10 animate-bounce"
+              src="./assets/chevron-down.3fc0919d.svg"
+              alt="icon"
+            />
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <section class="m-4">
+        <h2 class="font-Korolev text-mH2">Ring eller skriv til os</h2>
+        <p class="mb-12 pt-2 font-Roboto text-mP">
+          Har i spørgsmål til vores ture, er altid velkomne til at ringe til os
+          på <b class="font-bold text-pink"> +45 22568898 </b> eller skrive en
+          besked via
+          <b class="font-bold text-pink"> kontaktformularen </b> herunder.
+        </p>
+      </section>
+      <section class="mb-20 px-4">
+        <form class="w-full max-w-lg">
+          <div class="mb-6 flex flex-wrap">
+            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+              <label
+                class="mb-2 block text-mP font-bold tracking-wide"
+                for="grid-first-name"
+              >
+                Fulde navn*
+              </label>
+              <input
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:ring-0"
+                id="grid-first-name"
+                type="text"
+                placeholder="Jens Jensen"
+              />
+            </div>
+            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+              <label
+                class="mb-2 block text-mP font-bold tracking-wide"
+                for="grid-first-name"
+              >
+                Tlf. Nr.*
+              </label>
+              <input
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
+                id="grid-first-name"
+                type="text"
+                placeholder="12345678"
+              />
+            </div>
+            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+              <label
+                class="mb-2 block text-mP font-bold tracking-wide"
+                for="grid-first-name"
+              >
+                E-mail*
+              </label>
+              <input
+                class="mb-3 block w-full appearance-none rounded border py-3 px-4 text-mP leading-tight text-gray focus:border-pink focus:bg-white focus:outline-none focus:ring-0"
+                id="grid-first-name"
+                type="text"
+                placeholder="jens@jensen.dk"
+              />
+            </div>
+          </div>
+        </form>
+        <div class="mb-16">
+          <label for="message" class="mb-2 block text-mP font-bold focus:ring-0"
+            >Din besked</label
+          >
+          <textarea
+            id="message"
+            rows="4"
+            class="mb-10 block w-full rounded border border-gray text-mP text-black focus:border-pink focus:ring-0"
+            placeholder="Jeg har et spørgsmål..."
+          ></textarea>
+        </div>
+
+        <a
+          class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+          href="Kontaktdone.html"
+          >Send besked</a
+        >
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-darkgreen">
+      <div class="m-4 mb-0 flex">
+        <div>
+          <a href="index.html" class="flex items-center py-4">
+            <img src="./assets/logo.fc539a19.svg" alt="Logo" class="h-20 w-20" />
+          </a>
+        </div>
+        <div>
+          <p class="pl-6 pt-3 text-mP font-bold text-white">kontakt</p>
+          <p class="pl-6 text-mP font-thin text-white">
+            info@copenhagen-walkingtours.dk
+          </p>
+          <p class="pl-6 text-mP font-thin text-white">+45 22568898</p>
+        </div>
+      </div>
+      <div class="p-4">
+        <h5 class="text-mH5 font-bold text-white">Bestilling</h5>
+        <h5 class="pb-4 text-mH5 font-thin text-white">
+          Udfyld bookingformular for bestilling. I vil herefter modtage en
+          bekræftelse på booking med en formular som skal udfyldes for endelig
+          bekræftelse.
+        </h5>
+        <h5 class="text-mH5 font-bold text-white">Afbestilling</h5>
+        <h5 class="text-mH5 font-thin text-white">
+          Ved afbestilling senere end 72 timer før turens planlagte start
+          betales turens fulde beløb.
+        </h5>
+      </div>
+      <div class="p-4">
+        <h5 class="font-b text-end text-mH5 text-white">
+          ©Copenhagen Walking Tours
+        </h5>
+      </div>
+    </footer>
+
+    
+  </body>
+</html>
