@@ -5,10 +5,10 @@ module.exports = {
     fontSize: {
       // Web
       H1medium: "2.8rem",
-      H1large: "3.9rem",
+      H1large: "4rem",
       H2medium: "1.8rem",
       H2large: "2rem",
-      H3: "2rem",
+      H3: "1.6rem",
       NavMedium: "1.2rem",
       NavLarge: "1.3rem",
       H5: "0.9rem",
