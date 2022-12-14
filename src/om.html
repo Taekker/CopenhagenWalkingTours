@@ -13,17 +13,26 @@
     <!-- Header -->
     <header>
       <nav class="bg-transparent absolute right-0 z-10 w-screen font-Roboto">
-        <div class="mx-auto max-w-6xl px-4">
+        <div class="mx-auto max-w-6xl px-4 md:mx-5 md:w-screen lg:mx-10">
           <div class="flex justify-between">
             <div class="flex space-x-7">
               <div>
                 <!-- Website Logo -->
-                <a href="index.html" class="flex items-center py-4">
-                  <img src="logo.svg" alt="Logo" class="mr-2 h-20 w-20" />
+                <a
+                  href="index.html"
+                  class="flex items-center py-4 md:mr-2 lg:mr-6"
+                >
+                  <img
+                    src="logo.svg"
+                    alt="Logo"
+                    class="mr-2 h-20 w-20 md:h-28 md:w-28"
+                  />
                 </a>
               </div>
               <!-- Primary Navbar items -->
-              <div class="hidden items-center space-x-1 md:flex">
+              <div
+                class="hidden items-center space-x-1 font-Roboto md:flex md:space-x-4 md:text-NavMedium lg:space-x-6 lg:text-NavLarge"
+              >
                 <a
                   href="index.html"
                   class="font-semibold py-4 px-2 text-white transition duration-300 hover:text-pink"
@@ -124,7 +133,7 @@
       <section>
         <div class="relative">
           <img
-            class="h-screen object-cover brightness-4"
+            class="h-screen w-screen object-cover brightness-4"
             src="cph_hus.jpg"
             alt="baggrundsbillede"
           />
@@ -178,81 +187,109 @@
           jer rundt i København.
         </p>
       </section>
-      <section class="mb-12 bg-lightgreen">
-        <div class="ml-12 mr-12 mb-10">
-          <img class="pt-12 pb-2" src="icon4.svg" alt="ikon" />
-          <p class="pb-8 font-Roboto text-mH4">
-            Alle byvandringer er lukkede ture og skal bestilles i forvejen. Ved
-            afbestilling senere end 7 dage før rundvisningen, betales turens
-            fulde beløb.
-          </p>
+      <section class="bg-lightgreen md:flex">
+        <div
+          class="ml-12 mr-12 mb-10 md:m-10 md:flex md:gap-5 lg:mx-40 lg:gap-12"
+        >
+          <div class="md:w-3/4">
+            <img class="pt-12 pb-2 md:pt-0" src="icon4.svg" alt="ikon" />
+            <p class="md:text-h4 pb-8 font-Roboto text-mH4 md:pb-0">
+              Alle byvandringer er lukkede ture og skal bestilles i forvejen.
+              Ved afbestilling senere end 7 dage før rundvisningen, betales
+              turens fulde beløb.
+            </p>
+          </div>
+          <div class="md:w-3/4">
+            <img class="pb-2" src="icon3.svg" alt="ikon" />
+            <p class="md:text-h4 pb-8 font-Roboto text-mH4 md:pb-0">
+              Byvandringerne varer typisk mellem 1 ½ - 2 timer. <br />
+              (Vores byvandringer gennemføres hele året efter aftale.)
+            </p>
+          </div>
 
-          <img class="pb-2" src="icon3.svg" alt="ikon" />
-          <p class="pb-8 font-Roboto text-mH4">
-            Byvandringerne varer typisk mellem 1 ½ - 2 timer. <br />
-            (Vores byvandringer gennemføres hele året efter aftale.)
-          </p>
-
-          <img class="pb-2" src="icon2.svg" alt="ikon" />
-          <p class="pb-8 font-Roboto text-mH4">
-            Minimumspris for en tur er 1500DKK (1-15 personer). Derefter betales
-            100DKK pr. person. <br />
-            (Entré til Rosenborg slot (tur 5) er ikke indkluderet i prisen
-            herover.)
-          </p>
-
-          <img class="pb-2" src="icon1.svg" alt="ikon" />
-          <p class="pb-12 font-Roboto text-mH4">
-            Maksimum antal deltagere pr. gruppe 20 personer. Grupper over 20
-            deltagere kan evt. deles i to hold.
-          </p>
-        </div>
-      </section>
-      <section>
-        <div class="m-4 pb-16">
-          <h2 class="pb-2 font-Korolev text-mH2">
-            Interesseret i en byvandring?
-          </h2>
-          <p class="font-Korolev text-mP">
-            I er altid velkomne til at skrive eller ringe til os på <br />
-            <b class="font-bolder text-pink">
-              info@copenhagen-walkingtours.dk
-            </b>
-            <br />
-            eller <b class="font-bolder text-pink"> +45 22568898, </b> hvis I
-            har spørgsmål til vores ture. <br />
-            <br />
-            Ønsker I at læse mere om de forskellige ture vi tibyder?
-          </p>
-
-          <div class="pt-10">
-            <a
-              class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
-              href="byvandringer.html"
-              >Læs Mere</a
-            >
+          <div class="md:w-3/4">
+            <img class="pb-2" src="icon2.svg" alt="ikon" />
+            <p class="md:text-h4 pb-8 font-Roboto text-mH4 md:pb-0">
+              Minimumspris for en tur er 1500DKK (1-15 personer). Derefter
+              betales 100DKK pr. person. <br />
+              (Entré til Rosenborg slot (tur 5) er ikke indkluderet i prisen
+              herover.)
+            </p>
+          </div>
+          <div class="md:w-3/4">
+            <img class="pb-2" src="icon1.svg" alt="ikon" />
+            <p class="md:text-h4 pb-12 font-Roboto text-mH4 md:pb-0">
+              Maksimum antal deltagere pr. gruppe 20 personer. Grupper over 20
+              deltagere kan evt. deles i to hold.
+            </p>
           </div>
         </div>
       </section>
+      <section>
+        <div
+          class="m-10 my-14 overflow-hidden shadow-xl md:m-10 md:my-20 md:flex md:w-fit lg:mx-40 lg:my-24"
+        >
+          <div class="px-8 py-4">
+            <h2
+              class="pb-2 font-Korolev text-mH2 md:text-H2medium lg:text-H2large"
+            >
+              Interesseret i en byvandring?
+            </h2>
 
-      <section class="mb-20 bg-lightgreen">
-        <div class="p-4 pt-6">
-          <h2 class="font-Korolev text-mH2">
+            <p class="font-Korolev text-mP md:text-P">
+              I er altid velkomne til at skrive eller ringe til os på <br />
+              <b class="font-bolder text-pink">
+                info@copenhagen-walkingtours.dk
+              </b>
+              <br />
+              eller <b class="font-bolder text-pink"> +45 22568898, </b> hvis I
+              har spørgsmål til vores ture. <br />
+              <br />
+              Ønsker I at læse mere om de forskellige ture vi tibyder?
+            </p>
+            <div class="py-8">
+              <a
+                class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+                href="byvandring1.html"
+                >Læs Mere</a
+              >
+            </div>
+          </div>
+
+          <img
+            class="hidden rounded-r object-cover md:block md:w-80"
+            src="castle-g50423f281_1920.jpg"
+            alt="læs mere om byvandring 1"
+          />
+        </div>
+      </section>
+
+      <section class="mb-20 bg-lightgreen md:mb-32 md:mt-16 md:px-10 lg:pl-40">
+        <div class="p-4 pt-6 md:pt-12 lg:max-w-4xl">
+          <h2 class="font-Korolev text-mH2 md:text-H2medium lg:text-H2large">
             Book en spændende byvandring i København med vores autoriserede og
             erfarne guides.
           </h2>
         </div>
-        <div class="mb-8 flex px-4 pt-4">
-          <div>
+        <div class="flex px-4 pt-4">
+          <div class="xl:pr-80">
             <a
-              class="btn border-2 border-pink bg-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-white"
+              class="btn border-2 border-pink bg-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-white md:text-H2medium"
               href="booking.html"
               >Book Tour</a
             >
           </div>
-          <div class="flex h-14 place-content-end pl-20">
-            <img class="flex pr-2" src="walkingman.svg" alt="ikon" />
-            <img class="flex" src="walkingman.svg" alt="ikon" />
+          <div class="flex place-content-end pl-20 md:pl-72 xl:pl-96">
+            <img
+              class="flex h-14 pr-2 md:h-20 lg:h-24"
+              src="walkingman.svg"
+              alt="ikon"
+            />
+            <img
+              class="flex h-14 md:h-20 lg:h-24"
+              src="walkingman.svg"
+              alt="ikon"
+            />
           </div>
         </div>
       </section>
@@ -260,35 +297,49 @@
 
     <!-- Footer -->
     <footer class="bg-darkgreen">
-      <div class="m-4 mb-0 flex">
-        <div>
-          <a href="index.html" class="flex items-center py-4">
-            <img src="logo.svg" alt="Logo" class="h-20 w-20" />
-          </a>
+      <div class="lg:flex">
+        <div class="m-4 mb-0 flex lg:m-6">
+          <div>
+            <a href="index.html" class="flex items-center py-4 lg:py-0 lg:pr-5">
+              <img
+                src="logo.svg"
+                alt="Logo"
+                class="h-20 w-20 lg:h-24 lg:w-24"
+              />
+            </a>
+          </div>
+          <div class="place-self-center lg:place-self-start">
+            <p class="pl-6 text-mP font-bolder text-white md:text-P">kontakt</p>
+            <p class="pl-6 text-mP font-thin text-white">
+              info@copenhagen-walkingtours.dk
+            </p>
+            <p class="pl-6 text-mP font-thin text-white">+45 22568898</p>
+          </div>
         </div>
-        <div>
-          <p class="pl-6 pt-3 text-mP font-bold text-white">kontakt</p>
-          <p class="pl-6 text-mP font-thin text-white">
-            info@copenhagen-walkingtours.dk
-          </p>
-          <p class="pl-6 text-mP font-thin text-white">+45 22568898</p>
+        <div class="p-4 md:flex md:max-w-xl md:gap-10 md:pb-0 lg:pt-6">
+          <div>
+            <h5 class="pb-1 text-mH5 font-bolder text-white md:text-H5">
+              Bestilling
+            </h5>
+            <h5 class="pb-4 text-mH5 font-thin text-white md:text-H5">
+              Udfyld bookingformular for bestilling. <br />
+              I vil herefter modtage en bekræftelse på booking med en formular
+              som skal udfyldes for endelig bekræftelse.
+            </h5>
+          </div>
+          <div>
+            <h5 class="pb-1 text-mH5 font-bolder text-white md:text-H5">
+              Afbestilling
+            </h5>
+            <h5 class="text-mH5 font-thin text-white md:text-H5">
+              Ved afbestilling senere end 72 timer før turens planlagte start
+              betales turens fulde beløb.
+            </h5>
+          </div>
         </div>
       </div>
-      <div class="p-4">
-        <h5 class="text-mH5 font-bold text-white">Bestilling</h5>
-        <h5 class="pb-4 text-mH5 font-thin text-white">
-          Udfyld bookingformular for bestilling. I vil herefter modtage en
-          bekræftelse på booking med en formular som skal udfyldes for endelig
-          bekræftelse.
-        </h5>
-        <h5 class="text-mH5 font-bold text-white">Afbestilling</h5>
-        <h5 class="text-mH5 font-thin text-white">
-          Ved afbestilling senere end 72 timer før turens planlagte start
-          betales turens fulde beløb.
-        </h5>
-      </div>
-      <div class="p-4">
-        <h5 class="font-b text-end text-mH5 text-white">
+      <div class="p-4 md:pt-0">
+        <h5 class="font-b text-end text-mH5 text-white md:text-H5">
           ©Copenhagen Walking Tours
         </h5>
       </div>

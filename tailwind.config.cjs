@@ -4,10 +4,14 @@ module.exports = {
   theme: {
     fontSize: {
       // Web
-      H1: "5rem",
-      H2: "4rem",
-      BTN: "3.5rem",
-      H3: "3rem",
+      H1medium: "2.8rem",
+      H1large: "3.9rem",
+      H2medium: "1.8rem",
+      H2large: "2rem",
+      H3: "2rem",
+      NavMedium: "1.2rem",
+      NavLarge: "1.3rem",
+      H5: "0.9rem",
       H5: "0.8rem",
       H6: "0.6rem",
       P: "1rem",
@@ -18,7 +22,7 @@ module.exports = {
       mH2: "1.4rem",
       mBTN: "1.3rem",
       mH3: "1.1rem",
-      mH4: "0.8rem",
+      mH4: "0.9rem",
       mH5: "0.7rem", //unødvendig?
       mP: "0.9rem",
     },
