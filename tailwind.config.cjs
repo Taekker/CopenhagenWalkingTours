@@ -9,10 +9,10 @@ module.exports = {
       H2medium: "1.8rem",
       H2large: "2rem",
       H3: "1.6rem",
+
       NavMedium: "1.2rem",
       NavLarge: "1.3rem",
       H5: "0.9rem",
-      H5: "0.8rem",
       H6: "0.6rem",
       P: "1rem",
 

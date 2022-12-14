@@ -142,7 +142,7 @@
           />
           <div class="m-4 flex place-content-center">
             <h1
-              class="whitespace absolute top-1/4 text-center font-Korolev text-mH1 font-bold text-white"
+              class="whitespace absolute top-1/4 text-center font-Korolev text-mH1 font-bold text-white md:top-56 md:text-H1medium lg:ml-5 lg:text-H1large"
             >
               Kontakt os
             </h1>
@@ -159,21 +159,23 @@
 
     <!-- Main -->
     <main>
-      <section class="m-4">
-        <h2 class="font-Korolev text-mH2">Ring eller skriv til os</h2>
-        <p class="mb-12 pt-2 font-Roboto text-mP">
+      <section class="m-4 md:m-10 lg:mx-40 lg:max-w-xl">
+        <h2 class="font-Korolev text-mH2 md:text-H2medium lg:text-H2large">
+          Ring eller skriv til os
+        </h2>
+        <p class="mb-12 pt-2 font-Roboto text-mP md:max-w-md md:text-P">
           Har i spørgsmål til vores ture, er altid velkomne til at ringe til os
           på <b class="font-bold text-pink"> +45 22568898 </b> eller skrive en
           besked via
           <b class="font-bold text-pink"> kontaktformularen </b> herunder.
         </p>
       </section>
-      <section class="mb-20 px-4">
-        <form class="w-full max-w-lg">
+      <section class="m-4 mb-20 md:m-10 md:pb-14 lg:mx-40">
+        <form class="w-full max-w-lg md:max-w-2xl">
           <div class="mb-6 flex flex-wrap">
-            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+            <div class="mb-4 w-full md:mb-0 md:w-1/2 md:pr-8">
               <label
-                class="mb-2 block text-mP font-bold tracking-wide"
+                class="mb-2 block text-mP font-bold tracking-wide md:text-P"
                 for="grid-first-name"
               >
                 Fulde navn*
@@ -185,9 +187,9 @@
                 placeholder="Jens Jensen"
               />
             </div>
-            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+            <div class="mb-4 w-full md:mb-0 md:w-1/2 md:pr-8">
               <label
-                class="mb-2 block text-mP font-bold tracking-wide"
+                class="mb-2 block text-mP font-bold tracking-wide md:text-P"
                 for="grid-first-name"
               >
                 Tlf. Nr.*
@@ -199,9 +201,9 @@
                 placeholder="12345678"
               />
             </div>
-            <div class="mb-4 w-full md:mb-0 md:w-1/2">
+            <div class="mb-4 w-full md:mb-0 md:w-1/2 md:pr-8">
               <label
-                class="mb-2 block text-mP font-bold tracking-wide"
+                class="mb-2 block text-mP font-bold tracking-wide md:pt-2 md:text-P"
                 for="grid-first-name"
               >
                 E-mail*
@@ -215,8 +217,10 @@
             </div>
           </div>
         </form>
-        <div class="mb-16">
-          <label for="message" class="mb-2 block text-mP font-bold focus:ring-0"
+        <div class="mb-16 md:max-w-2xl md:pr-9">
+          <label
+            for="message"
+            class="mb-2 block text-mP font-bold focus:ring-0 md:text-P"
             >Din besked</label
           >
           <textarea
@@ -228,7 +232,7 @@
         </div>
 
         <a
-          class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink"
+          class="btn border-2 border-pink py-1.5 px-4 font-Roboto text-mBTN font-bold text-pink md:text-H3"
           href="kontaktdone.html"
           >Send besked</a
         >
