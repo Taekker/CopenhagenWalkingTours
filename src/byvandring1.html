@@ -137,7 +137,7 @@
           />
           <div class="mx-4 mt-4 flex place-content-center">
             <h1
-              class="absolute top-1/4 text-center font-Korolev text-mH1 font-bold text-white"
+              class="absolute top-1/4 text-center font-Korolev text-mH1 font-bold text-white md:top-56 md:text-H1medium lg:ml-5 lg:text-H1large"
             >
               På vandretur i indre by
             </h1>
@@ -152,45 +152,74 @@
       </section>
     </header>
     <main>
-      <section class="m-4">
-        <h2 class="pb-8 pt-4 font-Korolev text-mH2">
-          På denne byvandring i indre by af det gamle København, vil du opleve
-          byen fra en anderledes vinkel
-        </h2>
+      <section class="md:grid md:place-content-center">
+        <div class="m-4 md:m-10 lg:mx-40 lg:max-w-3xl">
+          <h2
+            class="pb-8 pt-4 text-center font-Korolev text-mH2 md:text-H2medium lg:text-H2large"
+          >
+            På denne byvandring i indre by af det gamle København, vil du opleve
+            byen fra en anderledes vinkel
+          </h2>
+        </div>
+        <div>
+          <h2
+            class="pb-3 text-center font-Korolev text-mH2 font-thin md:text-H2medium lg:text-H2large"
+          >
+            Byvandring 1
+          </h2>
+        </div>
 
-        <h2 class="pb-3 text-center font-Korolev text-mH2 font-thin">
-          Byvandring 1
-        </h2>
-      </section>
-      <section class="m-4">
-        <h2 class="pt-10 font-Korolev text-mH2">
-          Byporte, bindingsværk & blandede bolcher…
-        </h2>
+        <div class="m-4 md:m-10 lg:mx-40 lg:max-w-3xl">
+          <h2
+            class="pt-10 font-Korolev text-mH2 md:text-H2medium lg:text-H2large"
+          >
+            Byporte, bindingsværk & blandede bolcher…
+          </h2>
 
-        <p class="pt-2 font-Roboto text-mP">
-          Hvorfor har gaden sådan et mærkeligt navn? Hvornår var det nu, det
-          var? Hvor skete det? Hvad hed de? <br />
-          Få svar på alt det, du ikke ved om din by, og mere til. <br />
-          <br />
+          <p class="pt-2 font-Roboto text-mP md:text-P">
+            Hvorfor har gaden sådan et mærkeligt navn? Hvornår var det nu, det
+            var? Hvor skete det? Hvad hed de? <br />
+            Få svar på alt det, du ikke ved om din by, og mere til. <br />
+            <br />
 
-          København er rig på sjove, spændende, grumme, og sande historier, som
-          kun kan opleves, når man selv står på stedet, hvor det skete!
+            København er rig på sjove, spændende, grumme, og sande historier,
+            som kun kan opleves, når man selv står på stedet, hvor det skete!
 
-          <br />
-          ...Formålet med vores vandretur er at skærpe jeres appetit på at få
-          mere at vide om den by, vi alle sammen holder af. <br />
-          <br />
-          Så følg med os om bag facaderne, ind i gyderne og gennem byportene, og
-          få svar på alt det du ikke vidste om din by.
-        </p>
+            <br />
+            ...Formålet med vores vandretur er at skærpe jeres appetit på at få
+            mere at vide om den by, vi alle sammen holder af. <br />
+          </p>
+
+          <p class="pb-4 pt-10 font-bolder">Oplev bl.a.</p>
+          <ul class="list-disc px-4">
+            <li>Københavns mange springvand og statuer</li>
+            <li>Vor Frue Kirke</li>
+            <li>"Kanibalkøkkenet"</li>
+            <li>Et kig bag om porten på Collegium Regis</li>
+            <li>Asiatisk Plads</li>
+            <li>Historier fra Gråbrødre Torv</li>
+            <li>
+              Historiske fortællinger om nattevægtere, landsforrædere og H.C
+              andersen
+            </li>
+            <p class="pb-10">... Og meget mere</p>
+          </ul>
+          <p>
+            Så følg med os om bag facaderne, ind i gyderne og gennem byportene,
+            og få svar på alt det du ikke vidste om din by.
+          </p>
+        </div>
       </section>
       <!-- component -->
 
       <!-- JIT SUPPORT, for using peer-* below -->
       <script src="https://unpkg.com/tailwindcss-jit-cdn"></script>
 
-      <div class="relative mt-48 mb-48 p-3">
-        <div class="mx-auto w-80" style="scroll-snap-type: x mandatory">
+      <div class="relative mt-48 mb-52 p-3 md:mb-72 md:mt-52 lg:mb-80 lg:mt-56">
+        <div
+          class="mx-auto w-80 md:w-full"
+          style="scroll-snap-type: x mandatory"
+        >
           <!-- first -->
           <div class="">
             <input
@@ -202,10 +231,10 @@
             />
             <!-- content #1 -->
             <div
-              class="absolute top-1/2 left-1/2 z-0 w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100"
+              class="absolute top-1/2 left-1/2 z-0 w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100 md:h-96 md:w-2/3 lg:w-2/5"
             >
               <img
-                class="h-64 w-96 object-cover"
+                class="h-64 w-96 object-cover md:h-full md:w-full"
                 src="byvandring1_1.jpg"
                 alt=""
               />
@@ -214,15 +243,15 @@
               <div class="absolute top-1/2 z-20 flex w-full justify-between">
                 <label
                   for="carousel-3"
-                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5 md:-translate-x-8"
                 >
-                  <img class="h-5" src="pil_left.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_left.svg" alt="pil" />
                 </label>
                 <label
                   for="carousel-2"
-                  class="inline-block translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="inline-block translate-x-5 cursor-pointer active:translate-y-0.5 md:translate-x-8"
                 >
-                  <img class="h-5" src="pil_right.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_right.svg" alt="pil" />
                 </label>
               </div>
             </div>
@@ -237,10 +266,10 @@
             />
             <!-- content #2 -->
             <div
-              class="absolute top-1/2 left-1/2 z-0 h-fit w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100"
+              class="absolute top-1/2 left-1/2 z-0 w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100 md:h-96 md:w-2/3 lg:w-2/5"
             >
               <img
-                class="h-64 w-96 object-cover"
+                class="h-64 w-96 object-cover md:h-full md:w-full"
                 src="byvandring1_2.jpg"
                 alt=""
               />
@@ -249,15 +278,15 @@
               <div class="absolute top-1/2 z-20 flex w-full justify-between">
                 <label
                   for="carousel-1"
-                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5 md:-translate-x-8"
                 >
-                  <img class="h-5" src="pil_left.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_left.svg" alt="pil" />
                 </label>
                 <label
                   for="carousel-3"
-                  class="nk inline-block translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="nk inline-block translate-x-5 cursor-pointer active:translate-y-0.5 md:translate-x-8"
                 >
-                  <img class="h-5" src="pil_right.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_right.svg" alt="pil" />
                 </label>
               </div>
             </div>
@@ -272,10 +301,10 @@
             />
             <!-- content #3 -->
             <div
-              class="absolute top-1/2 left-1/2 z-0 h-fit w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100"
+              class="absolute top-1/2 left-1/2 z-0 w-80 -translate-x-1/2 -translate-y-1/2 transform rounded-lg bg-white opacity-0 shadow-lg transition-all duration-300 peer-checked:z-10 peer-checked:opacity-100 md:h-96 md:w-2/3 lg:w-2/5"
             >
               <img
-                class="h-64 w-96 object-cover"
+                class="h-64 w-96 object-cover md:h-full md:w-full"
                 src="byvandring_1_3.jpg"
                 alt=""
               />
@@ -284,15 +313,15 @@
               <div class="absolute top-1/2 z-20 flex w-full justify-between">
                 <label
                   for="carousel-2"
-                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="inline-block -translate-x-5 cursor-pointer active:translate-y-0.5 md:-translate-x-8"
                 >
-                  <img class="h-5" src="pil_left.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_left.svg" alt="pil" />
                 </label>
                 <label
                   for="carousel-1"
-                  class="inline-block translate-x-5 cursor-pointer active:translate-y-0.5"
+                  class="inline-block translate-x-5 cursor-pointer active:translate-y-0.5 md:translate-x-8"
                 >
-                  <img class="h-5" src="pil_right.svg" alt="pil" />
+                  <img class="h-5 md:h-8" src="pil_right.svg" alt="pil" />
                 </label>
               </div>
             </div>
