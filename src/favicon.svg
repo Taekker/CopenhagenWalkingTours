@@ -25,5 +25,6 @@
 <path d="M26.923 100.481C26.351 101.11 26.2938 101.711 26.78 102.197C27.3234 102.74 28.067 102.597 28.5532 101.911C29.1252 101.11 29.1252 100.967 28.5532 100.424C27.9812 99.823 27.495 99.8516 26.923 100.481Z" fill="white"></path>
 <path d="M29.726 107.516C29.2112 108.289 29.4114 109.032 30.2122 109.29C30.87 109.49 31.871 108.689 31.871 107.974C31.871 106.773 30.4124 106.458 29.726 107.516Z" fill="white"></path>
 <path d="M35.7319 110.72C35.4745 110.977 35.3029 111.52 35.3601 111.949C35.5317 113.322 37.5909 112.979 37.5909 111.578C37.5909 110.376 36.5613 109.89 35.7319 110.72Z" fill="white"></path>
-</svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.7); } }
+</svg><style>@media (prefers-color-scheme: light) { :root { filter: contrast(1) brightness(0.1); } }
+@media (prefers-color-scheme: dark) { :root { filter: contrast(1) brightness(1); } }
 </style></svg>
