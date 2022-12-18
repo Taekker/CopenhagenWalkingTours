@@ -26,11 +26,6 @@ module.exports = {
       mH5: "0.7rem", //unødvendig?
       mP: "0.9rem",
     },
-    // Font Family
-    fontFamily: {
-      Korolev: "'Korolev', serif",
-      Roboto: "'Roboto', serif",
-    },
 
     // Font Weight
     fontWeight: {
@@ -57,6 +52,11 @@ module.exports = {
         4: ".70",
         5: ".80",
         6: ".95",
+      },
+      // Font Family
+      fontFamily: {
+        Korolev: "'Korolev', serif",
+        Roboto: "'Roboto', serif",
       },
     },
   },
